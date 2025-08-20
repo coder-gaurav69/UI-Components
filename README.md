@@ -123,6 +123,8 @@ Storybook is deployed using **Vercel** (or Chromatic):
   helperText="This will be your public name"
 />
 
+---
+
 ### Example: DataTable
 <DataTable
   columns={[
@@ -134,6 +136,4 @@ Storybook is deployed using **Vercel** (or Chromatic):
     { id: "2", name: "Jane Doe", email: "jane@example.com" },
   ]}
 />
-
----
 
