@@ -72,7 +72,7 @@ src/
 ## 🖥️ Getting Started
 
 ### 1️⃣ Clone the repository
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/coder-gaurav69/UI-Components.git
 cd <your-repo>
 
 ### 2️⃣ Install dependencies
