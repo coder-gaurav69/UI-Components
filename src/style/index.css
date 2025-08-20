@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+  .rainbow-input:focus {
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: border-rotate 3s linear infinite;
+  }
+
+  @keyframes border-rotate {
+    from {
+      background-image: linear-gradient(white, white),
+                        linear-gradient(0deg, red, orange, yellow, green, blue, indigo, violet);
+    }
+    to {
+      background-image: linear-gradient(white, white),
+                        linear-gradient(360deg, red, orange, yellow, green, blue, indigo, violet);
+    }
+  }
+}
