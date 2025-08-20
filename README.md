@@ -113,20 +113,23 @@ Storybook is deployed using **Vercel** (or Chromatic):
 
 ## 📖 How to Use the Components
 
-### Example: InputField
+#### Example: InputField
 <InputField
-  label="Username"
-  placeholder="Enter your username"
+  label="Full Name"
+  placeholder="Enter your full name"
+  helperText="This will be displayed on your profile"
+  errorMessage=""
   variant="outlined"
   size="md"
-  showClear
-  helperText="This will be your public name"
+  value=""
+  onChange={(e) => console.log(e.target.value)}
 />
+
 
 ---
 
-### Example: DataTable
-<DataTable
+#### Example: DataTable
+<DataTable 
   columns={[
     { key: "name", header: "Name" },
     { key: "email", header: "Email" },
@@ -136,4 +139,5 @@ Storybook is deployed using **Vercel** (or Chromatic):
     { id: "2", name: "Jane Doe", email: "jane@example.com" },
   ]}
 />
+
 
